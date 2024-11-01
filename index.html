@@ -16,8 +16,148 @@
     <script src="js/fancybox.umd.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/splide.min.js.map"></script>
+    <style>
+        .bg-image {
+            background-image: url(img/home-bg.jpg);
+            background-color: #000000;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: start;
+            background-size: cover;
+        }
+        .bg-image-2 {
+            background-image: url(img/about-bg.jpg);
+            background-color: #000000;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: start;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="bg-image py-5">
+        <div class="container text-center py-5 mt-5">
+            <div class="h1 text-secondary pt-5 mt-5">
+                JOHN WHITE
+            </div>
+            <div class="h5 text-danger mb-4">
+                CREATIVE DIRECTOR
+            </div>
+            <div class="text-secondary">
+                I am a professional <span class="text-black">UX Designer</span> and <span class="text-black">Front-End Developer</span> creating modern and responsive designs for 
+            </div>
+            <div class="text-secondary mb-3">
+                <span class="text-black">Web</span> and <span class="text-black">Mobile</span>. Let us work together. Thank you
+            </div>
+            <div class="pb-5 mb-5">
+                <a href="#" class="btn btn-danger rounded-1 px-3">Let's Begin</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl mb-3">
+        <div class="h3 text-center mb-4 mt-5">
+            MY <span class="fw-bold">PORTFOLIO</span>
+        </div>
+        <ul class="nav justify-content-center mb-3">
+            <li class="nav-item">
+                <a class="nav-link text-white active bg-danger" aria-current="page" href="#">ALL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Photoshop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Wordpress</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Mobile</a>
+            </li>
+        </ul>
+        <div class="splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="row g-0">
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img1.jpg">
+                                    <img src="img/portfolio-img1.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img2.jpg">
+                                    <img src="img/portfolio-img2.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img3.jpg">
+                                    <img src="img/portfolio-img3.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img4.jpg">
+                                    <img src="img/portfolio-img4.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img5.jpg">
+                                    <img src="img/portfolio-img5.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img6.jpg">
+                                    <img src="img/portfolio-img6.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img7.jpg">
+                                    <img src="img/portfolio-img7.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a data-fancybox="gallery" href="img/portfolio-img8.jpg">
+                                    <img src="img/portfolio-img8.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-image-2">
+        <div class="container">
+            <div class="row justify-content-md-end py-5">
+                <div class="col-md-6">
+                    <div class="mt-5 pt-5 h5">
+                        THIS IS <span>ME</span>
+                    </div>
+                    <div class="h2 text-danger">
+                        CREATIVE <span class="fw-bold">DIRECTOR</span>
+                    </div>
+                    <div class="mb-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, qui id! Laboriosam voluptates, officia ipsum debitis, quaerat dicta officiis nobis facilis cumque cupiditate exercitationem iusto explicabo, illo sed harum in. Alias excepturi pariatur placeat error nulla incidunt ratione numquam ducimus.
+                    </div>
+                    <div class="mb-5 pb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae quia distinctio quidem officia eveniet rerum quos exercitationem qui hic!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            Fancybox.bind("[data-fancybox]", {
+            });
+            var splide = new Splide( '.splide', {
+            type   : 'loop',
+            padding: '5rem',
+            perPage: 1
+            } );
+            splide.mount();       
+        </script>
 </body>
 </html>
